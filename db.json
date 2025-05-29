@@ -1,0 +1,66 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Побег из Шоушенка",
+      "genre": "Драма",
+      "rating": "R",
+      "description": "История о заключённом Энди, который мечтает о свободе.",
+      "director": "Фрэнк Дарабонт",
+      "writer": "Стивен Кинг",
+      "actors": ["Том Хэнкс", "Морган Фриман"],
+      "trailerUrl": "https://www.youtube.com/embed/XYZ123"
+    },
+    {
+      "id": 2,
+      "title": "Темный рыцарь",
+      "genre": "Боевик",
+      "rating": "PG-13",
+      "description": "Бэтмен сталкивается с Джокером для спасения Готэма.",
+      "director": "Кристофер Нолан",
+      "writer": "Кристофер Нолан",
+      "actors": ["Кристиан Бэйл", "Хит Леджер"],
+      "trailerUrl": "https://www.youtube.com/embed/ABC456"
+    }
+  ],
+  "sessions": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "dateTime": "2024-10-01T18:00:00",
+      "auditorium": "Зал 1",
+      "seats": [
+        { "number": "1", "row": "A", "status": "free", "price": 10 },
+        { "number": "2", "row": "A", "status": "free", "price": 10 },
+        { "number": "3", "row": "A", "status": "sold", "price": 10 },
+        { "number": "4", "row": "A", "status": "free", "price": 10 },
+        { "number": "5", "row": "A", "status": "reserved", "price": 10 }
+
+      ]
+    },
+    {
+      "id": 2,
+      "movieId": 2,
+      "dateTime": "2024-10-01T20:00:00",
+      "auditorium": "Зал 2",
+      "seats": [
+        { "number": "1", "row": "B", "status": "free", "price": 12 },
+        { "number": "2", "row": "B", "status": "free", "price": 12 },
+        { "number": "3", "row": "B", "status": "free", "price": 12 }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "sessionId": 1,
+      "seats": [
+        { "number": "1", "row": "A", "status": "sold", "price": 10 },
+        { "number": "4", "row": "A", "status": "sold", "price": 10 }
+      ],
+      "totalPrice": 20,
+      "customerName": "Иван Иванов",
+      "customerPhone": "+7-900-123-45-67"
+    }
+  ]
+}
